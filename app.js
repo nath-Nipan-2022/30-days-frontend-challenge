@@ -7,7 +7,7 @@ const navLinks = document.querySelectorAll("nav ul li a");
 // };
 
 navLinks.forEach((link) => {
-  location.pathname.includes(link.innerText.toLowerCase())
+  location.href === link.href
     ? link.classList.add("active")
     : link.classList.remove("active");
 });
