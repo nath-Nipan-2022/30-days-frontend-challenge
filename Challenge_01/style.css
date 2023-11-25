@@ -1,0 +1,73 @@
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  list-style: none;
+}
+
+:root {
+  --primary-background-color: #343a40;
+  /* (dark gray for the navbar and footer).  */
+  --primary-text-color: #ffffff;
+  /* (white for text on dark backgrounds). */
+  --secondary-background-color: #f8f9fa;
+  /* (light gray for card backgrounds). */
+  --button-color: #007bff;
+  --button-hover-color: #0056b3;
+}
+
+nav,
+footer {
+  background: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+button,
+.btn-primary {
+  background: var(--button-color);
+}
+
+.btn-primary:hover {
+  background: var(--button-hover-color);
+}
+
+nav {
+  height: 56px;
+}
+
+header {
+  background: #e9ecef;
+}
+
+nav ul li a {
+  color: #828589;
+}
+
+nav ul li a:hover {
+  color: #d0d5da;
+}
+
+nav ul li a.active {
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+
+.header-italy {
+  background: #17a2b8;
+  color: #ffffff;
+}
+
+.report-header {
+  background: #6c757d;
+  color: var(--primary-text-color);
+}
+
+.card {
+  background-color: var(--secondary-background-color);
+}
