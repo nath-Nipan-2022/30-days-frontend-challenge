@@ -2,7 +2,7 @@
   "name": "30-days-frontend-challenge",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nath-nipan-2022.github.io/30-days-frontend-challenge",
+  "homepage": "https://nath-nipan-2022.github.io/30-days-frontend-challenge/",
   "type": "module",
   "scripts": {
     "dev": "vite",
