@@ -4,7 +4,7 @@ export const CreateBook = ({ onCreate }) => {
   const [book, setBook] = useState({
     title: "",
     author: "",
-    publication_year: 0,
+    publication_year: "",
     id: 0,
   });
 
@@ -54,7 +54,11 @@ export const CreateBook = ({ onCreate }) => {
         required
         name="publication_year"
       />
-      <button type="submit" className="btn btn-primary">
+      <button
+        type="submit"
+        className="btn btn-primary"
+        style={{ background: "#007bff" }}
+      >
         Add Book
       </button>
     </form>

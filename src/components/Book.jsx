@@ -5,7 +5,7 @@ export const Book = ({ book, onDelete }) => {
         <h4 className="flex-fill m-0">{book.title}</h4>
         <p className="m-0">by {book.author},</p>
       </div>
-      <div className="flex-fill px-2"> Year: {book.author}</div>
+      <div className="flex-fill px-2"> Year: {book.publication_year}</div>
 
       <button
         type="button"
