@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - challenge-2
+      - challenge-3
 
 jobs:
   build:
@@ -35,7 +35,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/challenge-2'
+    if: github.ref == 'refs/heads/challenge-3'
 
     steps:
       - name: Download artifact
