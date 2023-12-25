@@ -11,7 +11,7 @@ const Restaurants = () => {
 
   const filteredRestaurants = restaurants?.filter((restaurant) => {
     if (filterBy.toLowerCase() === "all") return true;
-    return restaurant.cousin === filterBy.toLowerCase();
+    return restaurant.cuisine === filterBy.toLowerCase();
   });
 
   let sortedRestaurants =
@@ -21,7 +21,7 @@ const Restaurants = () => {
           if (typeof restA[sortOption] === "string") {
             return restA[sortOption].localeCompare(restB[sortOption]);
           } else {
-            return restA[sortOption] - restB[sortOption];
+            return restB[sortOption] - restA[sortOption];
           }
         });
 
